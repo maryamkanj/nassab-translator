@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Nassab Translator",
+  title: "Nassab",
   description: "Certified Public Translator Portfolio",
 };
 

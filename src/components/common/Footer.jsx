@@ -27,30 +27,30 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="flex flex-col space-y-4">
-            <h3 className="text-yellow-400 font-semibold text-lg mb-2">
-              {translations.footer?.quickLinks || "Quick Links"}
-            </h3>
-            <div className="grid grid-cols-2 gap-2">
-              <Link href="/" className="hover:text-yellow-400 transition-all duration-300 transform hover:translate-x-1 flex items-center group">
-                <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
-                {translations.header.home}
-              </Link>
-              <Link href="/services" className="hover:text-yellow-400 transition-all duration-300 transform hover:translate-x-1 flex items-center group">
-                <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
-                {translations.header.services}
-              </Link>
-              <Link href="/about" className="hover:text-yellow-400 transition-all duration-300 transform hover:translate-x-1 flex items-center group">
-                <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
-                {translations.header.about}
-              </Link>
-              <Link href="/contact" className="hover:text-yellow-400 transition-all duration-300 transform hover:translate-x-1 flex items-center group">
-                <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
-                {translations.header.contact}
-              </Link>
-            </div>
-          </nav>
+{/* Navigation Links */}
+<nav className="flex flex-col space-y-4">
+  <h3 className="text-yellow-400 font-semibold text-lg mb-2">
+    {translations.footer?.quickLinks || "Quick Links"}
+  </h3>
+  <div className="grid grid-cols-2 gap-2">
+    <Link href="/" className="text-white group-hover:text-yellow-400 transition-colors duration-300 transform hover:translate-x-1 flex items-center group">
+      <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
+      {translations.header.home}
+    </Link>
+    <Link href="/services" className="text-white group-hover:text-yellow-400 transition-colors duration-300 transform hover:translate-x-1 flex items-center group">
+      <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
+      {translations.header.services}
+    </Link>
+    <Link href="/about" className="text-white group-hover:text-yellow-400 transition-colors duration-300 transform hover:translate-x-1 flex items-center group">
+      <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
+      {translations.header.about}
+    </Link>
+    <Link href="/contact" className="text-white group-hover:text-yellow-400 transition-colors duration-300 transform hover:translate-x-1 flex items-center group">
+      <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
+      {translations.header.contact}
+    </Link>
+  </div>
+</nav>
 
           {/* Contact & Social */}
           <div className="flex flex-col space-y-4">
@@ -68,14 +68,14 @@ export default function Footer() {
               
               <div className="flex items-center space-x-3 group">
                 <FaEnvelope className="text-yellow-400 text-lg group-hover:scale-110 transition-transform duration-300" />
-                <a href="mailto:nassab@example.com" className="text-gray-400 hover:text-yellow-400 transition-all duration-300">
+                <a href="mailto:nassab@example.com" className="text-gray-400 group-hover:text-white transition-colors duration-300">
                   {translations.contact?.emailAddressText || "nassab@example.com"}
                 </a>
               </div>
               
               <div className="flex items-center space-x-3 group">
                 <FaPhone className="text-yellow-400 text-lg group-hover:scale-110 transition-transform duration-300" />
-                <a href="tel:+96112345678" className="text-gray-400 hover:text-yellow-400 transition-all duration-300">
+                <a href="tel:+96112345678" className="text-gray-400 group-hover:text-white transition-colors duration-300">
                   {translations.contact?.phoneAddress || "+961 123 456 78"}
                 </a>
               </div>
@@ -83,14 +83,27 @@ export default function Footer() {
 
             {/* Social Media */}
             <div className="flex space-x-4 pt-2">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-3 rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-110 shadow-lg">
-                <FaLinkedin className="text-xl" />
+              <a 
+                href="https://www.linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-gray-800 p-3 rounded-lg hover:bg-blue-600 text-white transition-all duration-300 transform hover:scale-110 shadow-lg group"
+              >
+                <FaLinkedin className="text-xl group-hover:text-white" />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-3 rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-110 shadow-lg">
-                <FaInstagram className="text-xl" />
+              <a 
+                href="https://www.instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-gray-800 p-3 rounded-lg hover:bg-pink-600 text-white transition-all duration-300 transform hover:scale-110 shadow-lg group"
+              >
+                <FaInstagram className="text-xl group-hover:text-white" />
               </a>
-              <a href="mailto:nassab@example.com" className="bg-gray-800 p-3 rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-110 shadow-lg">
-                <FaEnvelope className="text-xl" />
+              <a 
+                href="mailto:nassab@example.com" 
+                className="bg-gray-800 p-3 rounded-lg hover:bg-red-600 text-white transition-all duration-300 transform hover:scale-110 shadow-lg group"
+              >
+                <FaEnvelope className="text-xl group-hover:text-white" />
               </a>
             </div>
           </div>
@@ -100,7 +113,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 lg:mt-12 pt-6 lg:pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="text-gray-500 text-sm text-center lg:text-left">
-              &copy; {new Date().getFullYear()} Nassab Translator. {translations.footer?.rights || "All rights reserved."}
+              &copy; {new Date().getFullYear()} Nassab Kassem Moussa. {translations.footer?.rights || "All rights reserved."}
             </div>
             <div className="text-gray-500 text-sm">
               {translations.footer?.tagline || "Professional Certified Translation Services"}

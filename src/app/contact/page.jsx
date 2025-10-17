@@ -57,7 +57,7 @@ export default function ContactPage() {
       icon: FaEnvelope,
       url: "mailto:nassab@example.com",
       name: translations.contact.socialEmail,
-      color: "hover:bg-yellow-600"
+      color: "hover:bg-red-600"
     }
   ];
 
