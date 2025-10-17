@@ -21,10 +21,10 @@ export const LanguageProvider = ({ children }) => {
     en: {
       // Page titles
       pageTitles: {
-        home: "Nassab Translator - Certified Public Translator",
-        services: "Our Services - Professional Translation Services",
-        about: "About Me - Certified Public Translator",
-        contact: "Contact Me - Get a Quote"
+        home: "Nassab - Certified Public Translator",
+        services: "Services - Professional Translation Services",
+        about: "About - Certified Public Translator",
+        contact: "Contact - Get a Quote"
       },
       header: { home: "Home", services: "Services", about: "About", contact: "Contact" },
       hero: {
@@ -119,10 +119,10 @@ export const LanguageProvider = ({ children }) => {
     fr: {
       // Page titles
       pageTitles: {
-        home: "Nassab Translator - Traducteur Public Certifié",
-        services: "Nos Services - Services de Traduction Professionnels",
-        about: "À Propos de Moi - Traducteur Public Certifié",
-        contact: "Contactez-moi - Obtenir un Devis"
+        home: "Nassab - Traducteur Public Certifié",
+        services: "Services - Services de Traduction Professionnels",
+        about: "À Propos - Traducteur Public Certifié",
+        contact: "Contact - Obtenir un Devis"
       },
       header: { home: "Accueil", services: "Services", about: "À propos", contact: "Contact" },
       hero: {
@@ -217,10 +217,10 @@ export const LanguageProvider = ({ children }) => {
     ar: {
       // Page titles
       pageTitles: {
-        home: "نسب للمترجمين - مترجم عام معتمد",
-        services: "خدماتنا - خدمات الترجمة الاحترافية",
-        about: "معلومات عني - مترجم عام معتمد",
-        contact: "تواصل معي - احصل على عرض سعر"
+        home: "نسب - مترجم عام معتمد",
+        services: "الخدمات - خدمات الترجمة الاحترافية",
+        about: "حول - مترجم عام معتمد",
+        contact: " اتصل - احصل على عرض سعر"
       },
       header: { home: "الرئيسية", services: "الخدمات", about: "حول", contact: "اتصل" },
       hero: {

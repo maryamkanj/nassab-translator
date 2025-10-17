@@ -10,7 +10,7 @@ export default function AboutPage() {
 
   // Update page title
   useEffect(() => {
-    document.title = translations.pageTitles?.about || "About Me - Certified Public Translator";
+    document.title = translations.pageTitles?.about || "About - Certified Public Translator";
   }, [translations]);
 
   const qualifications = [
