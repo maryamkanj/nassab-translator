@@ -26,17 +26,17 @@ export default function Header() {
       <div className="w-full flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
         {/* Logo & Brand */}
         <div className="flex items-center space-x-3 lg:space-x-4">
-          <div className="relative">
+          <Link href="/" className="relative">
             <Image
               src="/logo.png"
               alt="Nassab Logo"
               width={70}
               height={70}
-              className="rounded-full border-2 border-yellow-400 shadow-lg shadow-yellow-500/30 hover:scale-105 transition-transform duration-300"
+              className="rounded-full border-2 border-yellow-400 shadow-lg shadow-yellow-500/30 hover:scale-105 transition-transform duration-300 cursor-pointer"
               priority
             />
             <div className="absolute inset-0 rounded-full border border-yellow-300 animate-pulse"></div>
-          </div>
+          </Link>
           <div className="flex flex-col">
             <span className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent tracking-wide">
               Nassab Kassem Moussa

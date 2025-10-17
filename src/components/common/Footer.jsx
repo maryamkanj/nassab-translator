@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="flex flex-col space-y-4">
             <div className="flex flex-col">
               <span className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
-                Nassab Translator
+                Nassab Kassem Moussa
               </span>
               <span className="text-sm text-gray-400 font-light mt-1">
                 {translations.footer?.tagline || "Professional Certified Translation Services"}
